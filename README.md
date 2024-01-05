@@ -1,5 +1,12 @@
 # React + Vite
 
+This is a personalised version of Vite's React Javascript template.
+I've cleaned up the file structure so only the essential files are loaded.
+
+This installation adds portfinder so the project always finds a new available port to run and it also opens the project in the browser as soon as it's run.
+
+## This is Vite's original documentation:
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
