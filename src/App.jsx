@@ -1,3 +1,3 @@
 export default function App() {
-  return <>Hellow React</>;
+  return <h1>Hellow React</h1>;
 }

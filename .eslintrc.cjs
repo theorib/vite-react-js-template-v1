@@ -9,6 +9,9 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
+    'plugin:testing-library/react',
+    'plugin:vitest/recommended',
+    'plugin:jest-dom/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: {
@@ -18,7 +21,7 @@ module.exports = {
   settings: {
     react: { version: '18.2' },
   },
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh', 'vitest', 'testing-library', 'jest-dom'],
   rules: {
     'react-refresh/only-export-components': [
       'warn',
@@ -27,5 +30,9 @@ module.exports = {
     'react/prop-types': 'off', // Disable the prop-types rule
     // 'no-unused-vars': 'off', // Disable the unused variable warnings
     // ...you can add more custom rules here
+    'vitest/expect-expect': 'off', // eliminate distracting red squiggles while writing tests
+  },
+  globals: {
+    ...vitest.environments.env.globals,
   },
 };
