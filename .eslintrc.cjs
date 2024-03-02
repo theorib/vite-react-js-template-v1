@@ -3,6 +3,7 @@ module.exports = {
   env: {
     browser: true,
     es2020: true,
+    jest: true,
   },
   extends: [
     'eslint:recommended',
@@ -31,8 +32,5 @@ module.exports = {
     // 'no-unused-vars': 'off', // Disable the unused variable warnings
     // ...you can add more custom rules here
     'vitest/expect-expect': 'off', // eliminate distracting red squiggles while writing tests
-  },
-  globals: {
-    ...vitest.environments.env.globals,
   },
 };
