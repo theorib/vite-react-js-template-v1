@@ -11,8 +11,8 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     'plugin:testing-library/react',
-    'plugin:vitest/recommended',
     'plugin:jest-dom/recommended',
+    'plugin:vitest/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: {
